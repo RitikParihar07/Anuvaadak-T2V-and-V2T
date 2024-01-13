@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #356aff;
+    --bg-color: #f5f5f5;
+    --light-bg-color: #fff;
+    --text-color: #111116;
+    --light-text-color: #cdccd1;
+    --primary-text-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+header {
+    position: fixed;
+    top: 40px;
+    left: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    padding: 15px;
+}
+header h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+header h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+header p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+header h1 img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  width: 50%;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 470px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 450px;
+  }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea {
+    width: 300px;
+    padding: 0px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button img {
+    width: 30px;
+    margin-right: 10px;
+
+}
+button p {
+    color: var(--primary-color);
+     margin-bottom: 0;
+}
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.error {
+    color: #ff0000;
+
+    margin-top: 10px;
+}
+
+
+.card.right h3{
+    text-align: center;
+}
+.card.left h3{
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttons{
+      text-align: center;
+}
+
+
+
+footer {
+    background-color: transparent;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer h1{
+       font-size: 1.5rem;
+}
+.language-grid {
+            max-width: 100%;
+            margin: 0 auto;
+}
