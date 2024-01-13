@@ -29,8 +29,9 @@ body {
 
 header {
     position: fixed;
-    top: 20px;
-    left: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
     background-color: transparent;
     color: var(--primary-text-color);
@@ -79,12 +80,17 @@ main {
 }
 
 @media (min-width: 768px) {
+    header {
+        position: static;
+    }
+
     .cards {
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .card {
-        width: 45%;
+        width: 48%;
     }
 }
 
